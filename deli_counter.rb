@@ -3,7 +3,7 @@ if current_line.length == 0
   puts "The line is currently empty."
 else
   result = "The line is currently:"
-  current_line.each_with_index{ |name, index| 
+  current_line.each do{ |name, index| 
  result += " #{index+1}. #{name}" }
   puts result
 end
